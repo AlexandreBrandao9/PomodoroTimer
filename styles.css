@@ -1,0 +1,152 @@
+:root {
+    --primary-blue: #3792dd;
+    --overlay-blue: #31356d;
+    --light-blue: #98c3e6;
+    --white: #ffffff;
+    --black: #000000;
+}
+
+
+body {
+    background-color: var(--overlay-blue);
+    font-family: "Poppins";
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+.main-container {
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+.timer-modes-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 30px;
+    margin-bottom: 20px;
+    user-select: none;
+}
+
+
+
+.timer-mode {
+    background-color: none;
+    opacity: 50%;
+    color: var(--white);
+    font-weight: 500;
+    padding: 5px 15px;
+    border-radius: 20px;
+    border: 2px solid var(--white);
+    transition: all 0.2s linear;
+    user-select: none;
+    cursor: pointer;
+}
+
+
+
+
+
+.timer-mode:hover {
+    opacity: 100%;
+}
+
+
+
+
+
+#pomodoro-title {
+    font-size: 39px;
+    color: var(--white);
+    text-align: center;
+    margin-top: 80px;
+    font-weight: 500;
+    text-shadow: 3px 3px 5px var(--black);
+    margin-bottom: 20px;
+    user-select: none;
+}
+
+
+
+
+#pomodoro-subtitle {
+    font-size: 18px;
+    font-family: "Montserrat";
+    font-weight: 400;
+    color: var(--light-blue);
+    text-align: center;
+    margin-bottom: 60px;
+    user-select: none;
+}
+
+
+
+
+
+#progress-bar {
+    width: 100%;
+    background-color: #1f2244;
+    height: 12px;
+}
+
+
+
+#progress {
+    width: 0%;
+    height: 12px;
+    position: absolute;
+    background-color: var(--white);
+    transition: width 1s linear;
+}
+
+
+
+
+
+
+
+
+#pomodoro-timer-counter {
+    text-align: center;
+    font-size: 220px;
+    color: var(--white);
+    user-select: none;
+}
+
+
+
+
+
+
+#start-counter-btn {
+    color: var(--white);
+    opacity: 50%;
+    font-weight: 500;
+    font-size: 18px;
+    align-self: center;
+    text-align: center;
+    cursor: pointer;
+    background-color: none;
+    border: 2px solid var(--white);
+    padding: 10px;
+    width: 120px;
+    border-radius: 30px;
+    transition: all 0.2s ease-in-out;
+    margin-top: 0;
+    user-select: none;
+}
+
+
+
+#start-counter-btn:hover {
+    opacity: 100%;
+}
+
+
+
+
